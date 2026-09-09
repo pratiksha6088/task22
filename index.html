@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind Hero Landing Page</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="sticky top-0 z-50 bg-white">
+
+        <div class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-icon">◇</span>
+                <span>Project</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+
+                <a href="#">Product</a>
+                <a href="#">Solutions</a>
+                <a href="#">Resources</a>
+                <a href="#">Pricing</a>
+                <a href="#">Log in</a>
+
+                <button onclick="getAI()">
+                    Get AI free
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <!-- Heading -->
+            <h1>
+                Write, plan, share.
+                <span>With AI at your side.</span>
+            </h1>
+
+            <!-- Description -->
+            <p>
+                It's the connected workspace where better work happens.
+                Now with AI.
+            </p>
+
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+
+                <button
+                    onclick="getAI()"
+                    class="primary-btn">
+
+                    Get AI free →
+                    
+                </button>
+
+                <button
+                    onclick="requestDemo()"
+                    class="secondary-btn">
+
+                    Request a demo
+
+                </button>
+
+            </div>
+
+
+            <!-- ================= DASHBOARD AREA ================= -->
+
+            <div class="dashboard-area relative">
+
+                <!-- Dashboard Image -->
+                <div class="dashboard relative z-10">
+
+                    <img
+                        src="task.webp"
+                        alt="Dashboard Preview">
+
+                </div>
+
+
+                <!-- Tasks Card -->
+                <div class="floating-card tasks-card absolute z-20">
+
+                    <div class="card-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h3>Tasks</h3>
+                        <p>12 tasks completed today</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Project Status Card -->
+                <div class="floating-card status-card absolute z-20">
+
+                    <div class="card-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h3>Project Status</h3>
+                        <p class="on-track">On Track</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Team Activity Card -->
+                <div class="floating-card team-card absolute z-20">
+
+                    <div class="avatars">
+
+                        <img
+                            src="https://i.pravatar.cc/40?img=12"
+                            alt="User">
+
+                        <img
+                            src="https://i.pravatar.cc/40?img=32"
+                            alt="User">
+
+                        <img
+                            src="https://i.pravatar.cc/40?img=45"
+                            alt="User">
+
+                    </div>
+
+                    <div>
+                        <h3>Team Activity</h3>
+                        <p>+5 online</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FIXED CHAT ================= -->
+
+    <button
+        onclick="openChat()"
+        class="chat-widget fixed bottom-6 right-6 z-50">
+
+        💬
+
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
